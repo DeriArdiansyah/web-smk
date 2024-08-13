@@ -4,4 +4,4 @@ I created a login form using modern HTML, CSS and JavaScript to create a Login P
 # Screenshot
 Here we have project screenshot :
 
-![screenshot](form_login.jpg)
+![form_login.jpg](form_login.jpg)
