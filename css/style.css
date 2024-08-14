@@ -398,6 +398,56 @@ a {
   text-decoration: none;
 }
 
+/* Achievement Responsive adjustments */
+@media (max-width: 1024px) {
+  .achievement-item h3 {
+    font-size: 30px; /* Decrease size for larger tablets */
+  }
+
+  .achievement-item p {
+    font-size: 14px; /* Decrease size for larger tablets */
+  }
+
+  .icon {
+    width: 50px; /* Reduce size for larger tablets */
+    height: 50px; /* Reduce size for larger tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .achievement-item h3 {
+    font-size: 24px; /* Decrease size for tablets and smaller screens */
+  }
+
+  .achievement-item p {
+    font-size: 12px; /* Decrease size for tablets and smaller screens */
+  }
+
+  .icon {
+    width: 40px; /* Reduce size for tablets and smaller screens */
+    height: 40px; /* Reduce size for tablets and smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .achievement-item {
+    margin: 10px; /* Adjust space between items on mobile */
+  }
+
+  .achievement-item h3 {
+    font-size: 20px; /* Smaller size for mobile screens */
+  }
+
+  .achievement-item p {
+    font-size: 10px; /* Smaller size for mobile screens */
+  }
+
+  .icon {
+    width: 30px; /* Reduce size for mobile screens */
+    height: 30px; /* Reduce size for mobile screens */
+  }
+}
+
 /*** Testimonial ***/
 .testimonial-carousel::before {
   position: absolute;
