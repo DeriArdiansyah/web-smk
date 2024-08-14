@@ -216,6 +216,7 @@
   color: var(--light);
 }
 
+/*** teks berjalan ***/
 #marquee-container {
   width: 100%;
   overflow: hidden;
@@ -396,6 +397,57 @@ h2 {
 a {
   display: inline-block;
   text-decoration: none;
+}
+
+/*** achievement ***/
+.achievement-section {
+  background-color: #06bbcc; /* Warna background */
+  padding: 50px 0;
+  text-align: center;
+  color: #fff; /* Warna teks, sesuaikan jika perlu */
+}
+
+.achievement-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping of items on smaller screens */
+  justify-content: center; /* Center items horizontally */
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.achievement-item {
+  color: #fff;
+  display: flex;
+  flex-direction: column; /* Aligns items vertically */
+  align-items: center; /* Centers items horizontally */
+  text-align: center; /* Centers text horizontally */
+  margin: 15px; /* Space between items */
+  flex: 1 1 200px; /* Allows items to shrink and grow with a minimum width */
+}
+
+.achievement-item .icon {
+  margin-bottom: 15px;
+}
+
+.achievement-item h3 {
+  font-size: 36px; /* Default size */
+  margin-bottom: 5px;
+}
+
+.achievement-item p {
+  font-size: 16px; /* Default size */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.icon {
+  width: 60px; /* Default size */
+  height: 60px; /* Default size */
+  margin-bottom: 5px; /* Space between icon and text */
+  display: flex;
+  align-items: flex-start; /* Aligns SVG to the top */
+  justify-content: center; /* Centers SVG horizontally */
 }
 
 /* Achievement Responsive adjustments */
