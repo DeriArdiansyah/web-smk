@@ -4,8 +4,8 @@
   align-items: flex-start;
   padding: 20px;
   background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0.4, 0, 0, 0.4);
   margin-bottom: 20px;
 }
 
@@ -23,12 +23,12 @@
   margin-left: 20px;
   background-color: #f8f9fa;
   padding: 15px;
-  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0.2, 0, 0, 0.2);
 }
 
 .info-container h3 {
   font-size: 18px;
-  color: #0d47a1;
+  color: #007e9e;
   margin-bottom: 10px;
 }
 
@@ -47,7 +47,7 @@
 
 .info-container ul li i {
   margin-right: 8px;
-  color: #0d47a1;
+  color: #007e9e;
 }
 
 .share-icons {
@@ -56,12 +56,12 @@
 
 .share-icons span {
   font-size: 14px;
-  color: #555;
+  color: #007e9e;
   margin-right: 10px;
 }
 
 .share-icons a {
-  color: #0d47a1;
+  color: #007e9e;
   font-size: 18px;
   margin-right: 10px;
   text-decoration: none;
@@ -74,8 +74,8 @@
 .description-container {
   background-color: #ffffff;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0.4, 0, 0, 0.4);
 }
 
 .description-container h3 {
