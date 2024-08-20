@@ -29,6 +29,32 @@
   }
 }
 
+/* section-header */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info {
+  color: #333;
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.sign-in,
+.register {
+  margin-left: 15px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.sign-in:hover,
+.register:hover {
+  color: #007e9e;
+}
+
 /*** Spinner ***/
 #spinner {
   opacity: 0;
@@ -335,7 +361,7 @@
 }
 
 .service-item:hover {
-  margin-top: -10px;
+  margin-top: -5px;
   background: var(--primary);
 }
 
@@ -348,16 +374,15 @@
 }
 
 .card-rounded {
-  border-radius: 15px; /* Sudut melengkung */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan shadow untuk efek lebih baik */
+  border-radius: 10px; /* Sudut melengkung */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Tambahkan shadow untuk efek lebih baik */
   overflow: hidden; /* Agar konten dalam card juga mengikuti sudut melengkung */
   transition: transform 0.3s ease; /* Animasi saat hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Menambahkan shadow */
   height: 150px;
 }
 
 .card-rounded:hover {
-  transform: translateY(-10px); /* Efek hover untuk mengangkat card */
+  transform: translateY(-5px); /* Efek hover untuk mengangkat card */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Menambahkan shadow */
 }
 
@@ -378,7 +403,7 @@
 .team-item img {
   border-radius: 20px;
   transition: 0.5s;
-  border-radius: 0px 0 30px 30px;
+  border-radius: 30px;
 }
 
 .team-item:hover img {
@@ -409,6 +434,9 @@ a {
   max-width: 600px;
   margin: auto;
   font-family: Arial, sans-serif;
+  padding: 30px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .agenda-container h2 {
@@ -461,12 +489,16 @@ a {
   text-decoration: underline;
 }
 
+/*** gallery **/
+
 /*** achievement ***/
 .achievement-section {
   background-color: #06bbcc; /* Warna background */
-  padding: 50px 0;
+  padding: 20px 0;
+  border-radius: 10px;
   text-align: center;
   color: #fff; /* Warna teks, sesuaikan jika perlu */
+  box-shadow: 0 2px 8px rgba(0.4, 0, 0, 0.6);
 }
 
 .achievement-container {
