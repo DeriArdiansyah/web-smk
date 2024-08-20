@@ -1,4 +1,3 @@
-/********** Template CSS **********/
 :root {
   --primary: #06bbcc;
   --light: #f0fbfc;
@@ -30,29 +29,57 @@
 }
 
 /* section-header */
-.navbar-right {
+.contact-social-bar {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  background-color: #007e9e;
+  padding: 10px 20px;
+  color: #ffffff;
+  flex-wrap: wrap; /* Menambahkan flex-wrap untuk memudahkan penyesuaian elemen di layar sempit */
 }
 
 .contact-info {
-  color: #333;
-  margin-right: 20px;
-  font-size: 14px;
+  font-size: 18px;
+  margin-bottom: 10px; /* Memberi jarak di bawah pada perangkat kecil */
 }
 
-.sign-in,
-.register {
-  margin-left: 15px;
-  color: #333;
+.contact-info i {
+  margin-right: 10px;
+}
+
+.social-links {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.social-links span {
+  margin-right: 10px;
+}
+
+.social-links a {
+  color: #ffffff;
+  margin-right: 10px;
+  font-size: 20px;
   text-decoration: none;
-  font-size: 14px;
 }
 
-.sign-in:hover,
-.register:hover {
-  color: #007e9e;
+.social-links a:hover {
+  color: #cccccc;
+}
+
+/* Media Query untuk perangkat dengan lebar layar kurang dari 768px */
+@media (max-width: 768px) {
+  .contact-social-bar {
+    flex-direction: column; /* Mengatur layout vertikal pada perangkat kecil */
+    text-align: center; /* Pusatkan teks di perangkat kecil */
+  }
+
+  .social-links {
+    margin-top: 10px;
+    justify-content: center; /* Pusatkan ikon sosial media */
+  }
 }
 
 /*** Spinner ***/
@@ -436,7 +463,7 @@ a {
   font-family: Arial, sans-serif;
   padding: 30px 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .agenda-container h2 {
@@ -494,7 +521,7 @@ a {
 /*** achievement ***/
 .achievement-section {
   background-color: #06bbcc; /* Warna background */
-  padding: 20px 0;
+  padding: 50px 0;
   border-radius: 10px;
   text-align: center;
   color: #fff; /* Warna teks, sesuaikan jika perlu */
@@ -743,20 +770,6 @@ section {
 }
 
 /***  ***/
-
-@media (min-width: 768px) {
-  .testimonial-carousel::before,
-  .testimonial-carousel::after {
-    width: 200px;
-  }
-}
-
-@media (min-width: 992px) {
-  .testimonial-carousel::before,
-  .testimonial-carousel::after {
-    width: 300px;
-  }
-}
 
 /*** Footer ***/
 .footer .btn.btn-social {
