@@ -32,10 +32,25 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Template lightbox -->
+    <link rel="stylesheet" href="dist/css/lightbox.min.css">
     
 </head>
 
 <body>
+
+    <div class="navbar-right">
+        <div class="contact-info">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L.929 2.975c-.483.483-.661 1.169-.424 1.772a17.593 17.593 0 0 0 4.168 6.606 17.593 17.593 0 0 0 6.606 4.168c.603.237 1.289.059 1.772-.424l1.71-1.71a.678.678 0 0 0-.063-1.015l-2.51-2.51a.678.678 0 0 0-.58-.175l-2.167.433a1.745 1.745 0 0 1-1.427-.497l-.388-.387a1.745 1.745 0 0 1-.497-1.427l.433-2.167a.678.678 0 0 0-.175-.58L3.654 1.328zM1.885 2.972a.678.678 0 0 1 .356-.356l2.511-1.25c.3-.15.67-.05.91.19l2.51 2.51a.678.678 0 0 1 .175.58l-.433 2.167c-.07.35.05.708.278.935l.388.387a.678.678 0 0 0 .935.278l2.167-.433a.678.678 0 0 1 .58.175l2.51 2.51c.24.24.34.61.19.91l-1.25 2.511a.678.678 0 0 1-.356.356c-.27.135-.588.065-.792-.139a16.457 16.457 0 0 1-6.292-4.006 16.457 16.457 0 0 1-4.006-6.292c-.204-.204-.274-.522-.139-.792z"/>
+          </svg>
+          +62xxxxxxxxxx
+        </div>
+        <a href="#" class="sign-in">Sign In</a>
+        <a href="#" class="register">Register</a>
+    </div>
+      
 
     <!-- translate -->
     <a href="en" onclick="translatePage('en'); return false;" title="english">
@@ -483,6 +498,15 @@
                     </div>
                 </a>
             </div>
+            <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+                <a class="position-relative d-block h-100 overflow-hidden" href="">
+                    <img class="img-fluid position-absolute w-100 h-100" src="img/cat-4.jpg" alt="" style="object-fit: cover;">
+                    <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
+                        <h5 class="m-0">Pemasaran</h5>
+                        <small class="text-primary">Selengkapnya</small>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </div>
@@ -491,6 +515,7 @@
 <br>
 
 <!-- achievement -->
+<div class="container">
 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
     <h6 class="section-title bg-white text-center text-primary px-3">Achievement</h6>
 </div>
@@ -534,6 +559,7 @@
             <p>TAHUN AJAR</p>
         </div>
     </div>
+</div>
 </div>
 <!-- achievement end -->
 
@@ -645,6 +671,10 @@
     <a href="agenda.html" class="see-more">Lihat Selengkapnya</a>
 </div>
 <!-- agenda End -->
+<br>
+<!--gallery-->
+
+<!--gallery end--> 
 
 <!-- Contact Start -->
 <div class="container-xxl py-5">
@@ -727,11 +757,7 @@
         </div>
     </div>
 </div>
-<!-- Contact End -->
-
-<!--gallery-->
-
-<!--gallery end-->       
+<!-- Contact End -->      
 
 <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -857,6 +883,7 @@
     <script src="js/achievement.js"></script>
     <script src="js/main.js"></script>
     <script src="js/gallery.js"></script>
+
 </body>
 
 </html>
