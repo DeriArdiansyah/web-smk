@@ -1,0 +1,263 @@
+.content-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.text-container {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.social-share {
+  display: flex;
+  align-items: center;
+}
+
+.social-share span {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.social-share a {
+  color: #06bbcc;
+  margin-right: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-share a:hover {
+  color: #555;
+}
+
+/*** struktur ***/
+.org-chart {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.org-chart ul {
+  padding-top: 20px;
+  position: relative;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.org-chart ul ul::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 1px solid #ccc;
+  width: 0;
+  height: 20px;
+}
+
+.org-chart li {
+  display: inline-block;
+  text-align: center;
+  list-style-type: none;
+  position: relative;
+  padding: 20px 5px 0 5px;
+  vertical-align: top;
+}
+
+.org-chart li::before,
+.org-chart li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  border-top: 1px solid #ccc;
+  width: 50%;
+  height: 20px;
+}
+
+.org-chart li::before {
+  right: 50%;
+}
+
+.org-chart li::after {
+  left: 50%;
+  border-left: 1px solid #ccc;
+}
+
+.org-chart li:only-child::after,
+.org-chart li:only-child::before {
+  display: none;
+}
+
+.org-chart li:only-child {
+  padding-top: 0;
+}
+
+.org-chart li:first-child::before,
+.org-chart li:last-child::after {
+  border: 0;
+}
+
+.org-chart li:last-child::before {
+  border-right: 1px solid #ccc;
+  border-radius: 0 5px 0 0;
+}
+
+.org-chart li:first-child::after {
+  border-radius: 5px 0 0 0;
+}
+
+.org-node {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 180px;
+  margin: 0 auto;
+}
+
+.org-node h3,
+.org-node h4,
+.org-node h5 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.org-node p {
+  margin: 5px 0 0 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+/*** prestasi ***/
+.achievement-section {
+  background-color: #06bbcc;
+  padding: 50px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.achievement-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.achievement-item {
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.achievement-item h3 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.achievement-item p {
+  font-size: 14px;
+  color: #666;
+}
+
+.achievement-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #06bbcc;
+}
+
+/*** informasi akademik ***/
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  border-bottom: 2px solid #4caf50;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+.announcement {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+footer {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
