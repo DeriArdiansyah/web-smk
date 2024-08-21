@@ -41,71 +41,86 @@
 </head>
 <body>
 
+<!-- Spinner Start -->
+<div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+<!-- Spinner End -->
+
 <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-        <img src="img/smk.png" alt="Logo SMK" style="height: 50px; margin-right: 10px;">
-        <h2 class="m-0 text-primary">SMK</h2>
-    </a>
-    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto p-4 p-lg-0">
-            <a href="index.html" class="nav-item nav-link">Beranda</a>
-            <a href="#" class="nav-item nav-link active">Informasi Sekolah</a>           
-            <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Program Keahlian</a>
-                <div class="dropdown-menu fade-down m-0">
-                    <a href="404.html" class="dropdown-item">Teknik komputer dan jaringan</a>
-                    <a href="404.html" class="dropdown-item">Teknik kendaraan ringan</a>
-                    <a href="404.html" class="dropdown-item">Teknik instalasi listrik</a>
-                    <a href="404.html" class="dropdown-item">Pemasaran</a>
-                </div>
+  <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+      <img src="img/smk.png" alt="Logo SMK" style="height: 50px; margin-right: 10px;">
+      <h2 class="m-0 text-primary">SMK</h2>
+  </a>
+  <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav ms-auto p-4 p-lg-0">
+          <a href="index.html" class="nav-item nav-link">Beranda</a>
+          <div class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tentang</a>
+              <div class="dropdown-menu fade-down m-0">
+                  <a href="profil.html" class="dropdown-item">Profil Sekolah</a>
+                  <a href="struktur.html" class="dropdown-item active">Struktur</a>
+                  <a href="prestasi.html" class="dropdown-item">Prestasi</a>
+                  <a href="informasi.html" class="dropdown-item">Informasi</a>
+              </div>
+          </div>          
+          <div class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Program Keahlian</a>
+              <div class="dropdown-menu fade-down m-0">
+                  <a href="404.html" class="dropdown-item">Teknik komputer dan jaringan</a>
+                  <a href="404.html" class="dropdown-item">Teknik kendaraan ringan</a>
+                  <a href="404.html" class="dropdown-item">Teknik instalasi listrik</a>
+                  <a href="404.html" class="dropdown-item">Pemasaran</a>
+              </div>
+          </div>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pengumuman</a>
+            <div class="dropdown-menu fade-down m-0">
+                <a href="agenda.html" class="dropdown-item">Agenda Sekolah</a>
+                <a href="404.html" class="dropdown-item"> Kegiatan Ekstrakurikuler</a>
+                <a href="berita.html" class="dropdown-item">Berita Sekolah</a>
             </div>
-            <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pengumuman</a>
-                <div class="dropdown-menu fade-down m-0">
-                    <a href="pengumuman.html" class="dropdown-item">Pengumuman Akademik</a>
-                    <a href="404.html" class="dropdown-item"> Kegiatan Ekstrakurikuler</a>
-                    <a href="berita.html" class="dropdown-item">Berita Sekolah</a>
-                </div>
-            </div>
-            <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">selengkapnya</a>
-                <div class="dropdown-menu fade-down m-0">
-                    <a href="agenda1.html" class="dropdown-item">Agenda Kegiatan Sekolah</a>
-                    <a href="404.html" class="dropdown-item">Layanan Siswa dan Orang Tua</a>
-                    <a href="404.html" class="dropdown-item">Layanan Alumni</a>
-                    <a href="404.html" class="dropdown-item">Layanan Konseling</a>
-                </div>
-            </div>
-            <a href="contact.html" class="nav-item nav-link">Kontak</a>
         </div>
-       <!-- <a href="login.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Login<i class="fa fa-arrow-right ms-3"></i></a> -->
-    </div>
-    </div>      
+        <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">selengkapnya</a>
+            <div class="dropdown-menu fade-down m-0">
+                <a href="404.html" class="dropdown-item">Layanan Siswa dan Orang Tua</a>
+                <a href="404.html" class="dropdown-item">Layanan Alumni</a>
+                <a href="404.html" class="dropdown-item">Layanan Konseling</a>
+            </div>
+        </div>
+          <a href="contact.html" class="nav-item nav-link">Kontak</a>
+      </div>
+     <!-- <a href="login.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Login<i class="fa fa-arrow-right ms-3"></i></a> -->
+  </div>
+  </div>      
 </nav>
 <!-- Navbar End -->
 
-    <div class="content-container" data-aos="fade-up">
-        <div class="image-container">
-          <img src="img/nadiem-makarim.webp" alt="Placeholder Image">
-        </div>
-        
-        <div class="text-container">
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book...</p>
-        </div>
-        
-        <div class="social-share">
-          <span>Media Social :</span>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
+<!-- Header Start -->
+<div class="container-fluid bg-primary py-5 mb-5 page-header">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h1 class="display-3 text-white animated slideInDown">Informasi Sekolah</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a class="text-white" href="index.html">Beranda</a></li>
+                        <li class="breadcrumb-item"><a class="text-white" href="#">Struktur</a></li>
+                    </ol>
+                </nav>
+            </div>
         </div>
     </div>
-<br>
+</div>
+<!-- Header End -->
 
 <!--struktur organisasi-->
 <div class="content-container">
@@ -190,118 +205,6 @@
 </div>
 </div>
 <!--struktur organisasi end-->
-
-<br>
-
-<!-- prestasi -->
- <div class="content-container">
-<div class="achievement-section">
-    <h2>Prestasi Sekolah</h2>
-    <div class="achievement-grid">
-        <div class="achievement-item">
-            <div class="achievement-icon">🏆</div>
-            <h3>Juara 1 Olimpiade Matematika</h3>
-            <p>Siswa kami berhasil meraih Juara 1 dalam Olimpiade Matematika tingkat nasional.</p>
-        </div>
-        <div class="achievement-item">
-            <div class="achievement-icon">🏅</div>
-            <h3>Juara Umum Lomba Sains</h3>
-            <p>Sekolah kami mendapatkan predikat Juara Umum dalam Lomba Sains tingkat provinsi.</p>
-        </div>
-        <div class="achievement-item">
-            <div class="achievement-icon">🥇</div>
-            <h3>Medali Emas Basket</h3>
-            <p>Tim basket sekolah kami meraih medali emas dalam kejuaraan basket antar sekolah.</p>
-        </div>
-        <div class="achievement-item">
-            <div class="achievement-icon">🎨</div>
-            <h3>Juara 2 Lomba Seni Lukis</h3>
-            <p>Siswa kami memenangkan Juara 2 dalam lomba seni lukis tingkat kota.</p>
-        </div>
-        <div class="achievement-item">
-            <div class="achievement-icon">📜</div>
-            <h3>Beasiswa ke Luar Negeri</h3>
-            <p>Salah satu siswa kami berhasil mendapatkan beasiswa penuh untuk studi di luar negeri.</p>
-        </div>
-        <div class="achievement-item">
-            <div class="achievement-icon">🎭</div>
-            <h3>Juara 3 Drama Sekolah</h3>
-            <p>Tim drama sekolah kami berhasil meraih Juara 3 dalam festival drama tingkat nasional.</p>
-        </div>
-    </div>
-</div>
-</div>
-<!-- prestasi end -->
-
-<br>
-
-
-<!-- informasi akademik -->
-<main>
-    <section class="subjects">
-        <h2>Mata Pelajaran</h2>
-        <ul>
-            <li><strong>Matematika</strong>: Kelas X, XI, XII</li>
-            <li><strong>Bahasa Inggris</strong>: Kelas X, XI, XII</li>
-            <li><strong>Fisika</strong>: Kelas XI, XII</li>
-            <li><strong>Kimia</strong>: Kelas XI, XII</li>
-            <li><strong>Biologi</strong>: Kelas X, XI, XII</li>
-            <!-- Tambahkan mata pelajaran lain sesuai kebutuhan -->
-        </ul>
-    </section>
-
-    <section class="schedule">
-        <h2>Jadwal</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Hari</th>
-                    <th>Jam</th>
-                    <th>Mata Pelajaran</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Senin</td>
-                    <td>08:00 - 09:30</td>
-                    <td>Matematika</td>
-                </tr>
-                <tr>
-                    <td>Senin</td>
-                    <td>09:45 - 11:15</td>
-                    <td>Bahasa Inggris</td>
-                </tr>
-                <tr>
-                    <td>Selasa</td>
-                    <td>08:00 - 09:30</td>
-                    <td>Fisika</td>
-                </tr>
-                <tr>
-                    <td>Selasa</td>
-                    <td>09:45 - 11:15</td>
-                    <td>Kimia</td>
-                </tr>
-                <!-- Tambahkan jadwal lain sesuai kebutuhan -->
-            </tbody>
-        </table>
-    </section>
-
-    <section class="announcements">
-        <h2>Pengumuman</h2>
-        <div class="announcement">
-            <h3>Ujian Tengah Semester</h3>
-            <p>Ujian Tengah Semester akan dilaksanakan pada tanggal 15-20 September 2024. Mohon persiapkan materi dengan baik.</p>
-        </div>
-        <div class="announcement">
-            <h3>Libur Sekolah</h3>
-            <p>Libur sekolah akan dimulai pada tanggal 25-30 Desember 2024. Selamat berlibur!</p>
-        </div>
-        <!-- Tambahkan pengumuman lain sesuai kebutuhan -->
-    </section>
-</main>
-<!-- informasi akademik end -->
-
-<br>
 
  <!-- agenda -->
  <div class="agenda-container" data-aos="fade-up" data-aos-delay="100">
