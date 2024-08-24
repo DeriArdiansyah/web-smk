@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita</title>
+
     <meta charset="utf-8">
     <title>SMK NEGERI 1 KUANTAN MUDIK</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -9,7 +13,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/smk.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,8 +31,13 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/agenda.css">
 </head>
 
 <body>
@@ -73,9 +82,8 @@
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pengumuman</a>
                 <div class="dropdown-menu fade-down m-0">
-                    <a href="agenda.html" class="dropdown-item">Agenda Sekolah</a>
-                    <a href="404.html" class="dropdown-item"> Kegiatan Ekstrakurikuler</a>
                     <a href="berita.html" class="dropdown-item active">Berita Sekolah</a>
+                    <a href="ekstra.html" class="dropdown-item"> Kegiatan Ekstrakurikuler</a>
                 </div>
             </div>
             <div class="nav-item dropdown">
@@ -95,8 +103,8 @@
 <!-- Navbar End -->
 
 
-     <!-- Header Start -->
-     <div class="container-fluid bg-primary py-5 mb-5 page-header">
+<!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
@@ -111,62 +119,189 @@
             </div>
         </div>
     </div>
-    <!-- Header End -->
+<!-- Header End -->
 
-<!-- Berita Start -->
-<div class="container-xxl py-5 category">
-    <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="section-title bg-white text-center text-primary px-3">Berita</h6>
-            <h1 class="mb-5">Berita Sekolah</h1>
-        </div>
-        <div class="row g-3">
-            <div class="col-lg-7 col-md-6">
-                <div class="row g-3">
-                    <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
-                        <a class="position-relative d-block overflow-hidden" href="">
-                            <img class="img-fluid" src="img/cat-1.jpg" alt="">
-                            <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                <h5 class="m-0">Teknik komputer dan jaringan</h5>
-                                <small class="text-primary">49 Courses</small>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
-                        <a class="position-relative d-block overflow-hidden" href="">
-                            <img class="img-fluid" src="img/cat-2.jpg" alt="">
-                            <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                <h5 class="m-0">Teknik kendaraan ringan</h5>
-                                <small class="text-primary">49 Courses</small>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
-                        <a class="position-relative d-block overflow-hidden" href="">
-                            <img class="img-fluid" src="img/cat-3.jpg" alt="">
-                            <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                <h5 class="m-0">Teknik instalasi listrik</h5>
-                                <small class="text-primary">49 Courses</small>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
-                <a class="position-relative d-block h-100 overflow-hidden" href="">
-                    <img class="img-fluid position-absolute w-100 h-100" src="img/cat-4.jpg" alt="" style="object-fit: cover;">
-                    <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
-                        <h5 class="m-0">Online Marketing</h5>
-                        <small class="text-primary">49 Courses</small>
-                    </div>
-                </a>
-            </div>
+<!--agenda 1-->
+<div class="container" data-aos="fade-up" data-aos-delay="150">
+<div class="agenda-detail-container">
+    <div class="image-container">
+        <img src="img/cat-1.jpg" alt="Agenda Image">
+    </div>
+    <div class="info-container">
+        <h3>Informasi</h3>
+        <ul>
+            <li>
+                <i class="fas fa-calendar-alt"></i>
+                10 Agu 2024 s/d 10 Agu 2024
+            </li>
+            <li>
+                <i class="fas fa-clock"></i>
+                17:00 s/d 19:00
+            </li>
+        </ul>
+        <div class="share-icons">
+            <span>Share :</span>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
         </div>
     </div>
 </div>
-<!-- Berita End -->
+<div class="description-container">
+    <h3>Deskripsi :</h3>
+    <p>Isi dari agenda Kesatu.</p>
+    <a href="agenda1.html" class="see-more">Lihat Selengkapnya</a>
+</div>
+</div>
+<!--agenda 1 end -->
+<br>
+<!--agenda 2 -->
+<div class="container" data-aos="fade-up" data-aos-delay="200">
+<div class="agenda-detail-container">
+    <div class="image-container">
+        <img src="img/cat-2.jpg" alt="Agenda Image">
+    </div>
+    <div class="info-container">
+        <h3>Informasi</h3>
+        <ul>
+            <li>
+                <i class="fas fa-calendar-alt"></i>
+                10 Agu 2024 s/d 10 Agu 2024
+            </li>
+            <li>
+                <i class="fas fa-clock"></i>
+                17:00 s/d 19:00
+            </li>
+        </ul>
+        <div class="share-icons">
+            <span>Share :</span>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+</div>
+<div class="description-container">
+    <h3>Deskripsi :</h3>
+    <p>Isi dari agenda Kedua.</p>
+    <a href="agenda2.html" class="see-more">Lihat Selengkapnya</a>
+</div>
+</div>
+<!--agenda 2 end -->
+<br>
+<!--agenda 3 -->
+<div class="container" data-aos="fade-up" data-aos-delay="250">
+<div class="agenda-detail-container">
+    <div class="image-container">
+        <img src="img/cat-3.jpg" alt="Agenda Image">
+    </div>
+    <div class="info-container">
+        <h3>Informasi</h3>
+        <ul>
+            <li>
+                <i class="fas fa-calendar-alt"></i>
+                10 Agu 2024 s/d 10 Agu 2024
+            </li>
+            <li>
+                <i class="fas fa-clock"></i>
+                17:00 s/d 19:00
+            </li>
+        </ul>
+        <div class="share-icons">
+            <span>Share :</span>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+</div>
+<div class="description-container">
+    <h3>Deskripsi :</h3>
+    <p>Isi dari agenda Ketiga.</p>
+    <a href="agenda3.html" class="see-more">Lihat Selengkapnya</a>
+</div>
+</div>
+<!--agenda 3 end -->
+<br>
+<!--agenda 4-->
+<div class="container" data-aos="fade-up" data-aos-delay="300">
+<div class="agenda-detail-container">
+    <div class="image-container">
+        <img src="img/cat-4.jpg" alt="Agenda Image">
+    </div>
+    <div class="info-container">
+        <h3>Informasi</h3>
+        <ul>
+            <li>
+                <i class="fas fa-calendar-alt"></i>
+                10 Agu 2024 s/d 10 Agu 2024
+            </li>
+            <li>
+                <i class="fas fa-clock"></i>
+                17:00 s/d 19:00
+            </li>
+        </ul>
+        <div class="share-icons">
+            <span>Share :</span>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+</div>
+<div class="description-container">
+    <h3>Deskripsi :</h3>
+    <p>Isi dari agenda Keempat.</p>
+    <a href="agenda4.html" class="see-more">Lihat Selengkapnya</a>
+</div>
+</div>
+<!--agenda 4 end -->
+<br>
+<!--agenda 5 -->
+<div class="container" data-aos="fade-up" data-aos-delay="350">
+<div class="agenda-detail-container">
+    <div class="image-container">
+        <img src="img/course-1.jpg" alt="Agenda Image">
+    </div>
+    <div class="info-container">
+        <h3>Informasi</h3>
+        <ul>
+            <li>
+                <i class="fas fa-calendar-alt"></i>
+                10 Agu 2024 s/d 10 Agu 2024
+            </li>
+            <li>
+                <i class="fas fa-clock"></i>
+                17:00 s/d 19:00
+            </li>
+        </ul>
+        <div class="share-icons">
+            <span>Share :</span>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+</div>
+<div class="description-container">
+    <h3>Deskripsi :</h3>
+    <p>Isi dari agenda Kelima.</p>
+    <a href="agenda5.html" class="see-more">Lihat Selengkapnya</a>
+</div>
+</div>
+<!--agenda 5 end -->
 
-    <!-- Footer Start -->
+<!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
@@ -241,12 +376,11 @@
             </div>
         </div>
     </div>
-    <!-- Footer End -->
+<!-- Footer End -->
 
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+<!-- Back to Top end-->
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -256,8 +390,37 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- Template Javascript -->
+<!-- Template Javascript -->
+
+<!--fitur translate-->
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'id', // Bahasa default situs Anda
+            includedLanguages: 'en,id', // Bahasa yang diizinkan (Inggris dan Indonesia)
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+    }
+
+    function translatePage(language) {
+        var selectField = document.querySelector("select.goog-te-combo");
+        if (selectField) {
+            selectField.value = language;
+            selectField.dispatchEvent(new Event('change'));
+        }
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!--fitur translate end-->
+  
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+    <script src="js/achievement.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
 </body>
 
 </html>
