@@ -382,42 +382,72 @@
 }
 
 /*** Service jurusan ***/
-.service-item {
-  background: var(--light);
-  transition: 0.5s;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.section-title {
+  color: #007e9e;
+  margin-bottom: 10px;
+}
+.section-subtitle {
+  color: #555;
+  margin-bottom: 40px;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.service-card {
+  background-color: #fff;
+  border: 3px solid #e7e7e7;
+  border-radius: 20px 20px 20px 20px;
+  padding: 20px;
+  text-align: left;
+  transition: border-color 0.3s;
+}
+.service-card:hover {
+  border-color: #007e9e;
+}
+.service-card h3 {
+  font-size: 18px;
+  color: #007e9e;
+  margin-bottom: 15px;
+}
+.service-card p {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.service-card a {
+  color: #007e9e;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.service-card a:hover {
+  color: #333;
 }
 
-.service-item:hover {
-  margin-top: -5px;
-  background: var(--primary);
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.service-item * {
-  transition: 0.5s;
-}
-
-.service-item:hover * {
-  color: var(--light) !important;
-}
-
-.card-rounded {
-  border-radius: 10px; /* Sudut melengkung */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Tambahkan shadow untuk efek lebih baik */
-  overflow: hidden; /* Agar konten dalam card juga mengikuti sudut melengkung */
-  transition: transform 0.3s ease; /* Animasi saat hover */
-  height: 150px;
-}
-
-.card-rounded:hover {
-  transform: translateY(-5px); /* Efek hover untuk mengangkat card */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Menambahkan shadow */
+@media (max-width: 576px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*** Categories & Courses pengumumamn akademik ***/
 .category img,
 .course-item img {
   transform: translateY(-10px);
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
   transition: 0.5s;
 }
 
